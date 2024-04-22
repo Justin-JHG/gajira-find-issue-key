@@ -26,7 +26,7 @@ jobs:
       id: find
       uses: ./
       with:
-        string: Search is performed in this string. FIND-1 will be found
+        string: Search is performed in this string. PCR-1000 will be found
 
     - name: Find Issue Key
       uses: ./

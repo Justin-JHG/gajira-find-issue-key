@@ -7,7 +7,7 @@ Extract issue key from string
 
 ## Usage
 
-> ##### Note: this action requires [Jira Login Action](https://github.com/marketplace/actions/jira-login)
+> ##### Note: this action requires [Jira Login Action](https://github.com/marketplace/actions/jira-login-action)
 
 To find an issue key inside github event (branch):
 ```yaml
