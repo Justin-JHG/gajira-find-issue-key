@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky",
     "test": "jest",
-    "build": "esbuild index.js --bundle --platform=node --format=cjs --outfile=dist/index.js --sourcemap",
+    "build": "node build.mjs",
     "start": "ncc build index.js -w",
     "lint": "eslint",
     "precommit": "run-p lint build"
