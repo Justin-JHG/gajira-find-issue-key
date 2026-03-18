@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky",
     "test": "jest",
-    "build": "ncc build index.js -s && node -e \"require('fs').writeFileSync('dist/package.json', JSON.stringify({type:'commonjs'}, null, 2))\"",
+    "build": "esbuild index.js --bundle --platform=node --format=cjs --outfile=dist/index.js --sourcemap",
     "start": "ncc build index.js -w",
     "lint": "eslint",
     "precommit": "run-p lint build"
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
+    "esbuild": "^0.27.4",
     "eslint": "^10.0.3",
     "husky": "^9.1.7",
     "jest": "^30.3.0",
