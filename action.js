@@ -1,5 +1,5 @@
-const _ = require('lodash')
-const Jira = require('./common/net/Jira')
+import _ from 'lodash'
+import Jira from './common/net/Jira.js'
 
 const issueIdRegEx = /([a-zA-Z0-9]+-[0-9]+)/g
 
@@ -8,7 +8,7 @@ const eventTemplates = {
   commits: "{{event.commits.map(c=>c.message).join(' ')}}",
 }
 
-module.exports = class {
+export default class {
   constructor ({ githubEvent, argv, config }) {
     this.Jira = new Jira({
       baseUrl: config.baseUrl,
