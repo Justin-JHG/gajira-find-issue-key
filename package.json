@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky",
     "test": "jest",
-    "build": "ncc build index.js -s",
+    "build": "ncc build index.js -s && node -e \"require('fs').writeFileSync('dist/package.json', JSON.stringify({type:'commonjs'}, null, 2))\"",
     "start": "ncc build index.js -w",
     "lint": "eslint",
     "precommit": "run-p lint build"
