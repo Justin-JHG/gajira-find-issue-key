@@ -14,10 +14,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '24'
-        cache: 'yarn'
+        cache: 'npm'
       
-    - run: yarn install
-    - run: yarn precommit
+    - run: npm ci
+    - run: npm run precommit
 
     - name: Login
       uses: Justin-JHG/gajira-login@v1
