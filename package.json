@@ -4,12 +4,12 @@
   "description": "Find issue keys in string",
   "main": "index.js",
   "scripts": {
-		"prepare": "husky",
+    "prepare": "husky",
     "test": "jest",
-    "build": "ncc build index.js -s",
+    "build": "node build.mjs",
     "start": "ncc build index.js -w",
-		"lint": "eslint",
-		"precommit": "run-p lint build"
+    "lint": "eslint",
+    "precommit": "run-p lint build"
   },
   "author": "Justin",
   "license": "ISC",
@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
-    "eslint": "^9.0.0",
+    "esbuild": "^0.27.4",
+    "eslint": "^10.0.3",
     "husky": "^9.1.7",
     "jest": "^30.3.0",
     "jest-junit": "^16.0.0",
