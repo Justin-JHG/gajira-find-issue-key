@@ -17,7 +17,7 @@
     "node": ">=24.0.0"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
+    "@actions/core": "^3.0.0",
     "lodash": "^4.17.23",
     "node-fetch": "^2.7.0",
     "yaml": "^2.8.1"
