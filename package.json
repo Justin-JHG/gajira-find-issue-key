@@ -21,7 +21,7 @@
     "@actions/core": "^3.0.0",
     "lodash": "^4.17.23",
     "node-fetch": "^2.7.0",
-    "yaml": "^2.8.1"
+    "yaml": "^2.8.3"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.4",
