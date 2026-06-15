@@ -54,3 +54,4 @@ To find an issue key inside commit messages:
 
 ### Writes fields to CLI config file at $HOME/.jira.d/config.yml
 - `issue` - a key of a found issue
+
